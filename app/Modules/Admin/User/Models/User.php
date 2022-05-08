@@ -2,10 +2,10 @@
 
 namespace App\Modules\Admin\User\Models;
 
+use App\Modules\Admin\Role\Models\Traits\UserRoles;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Laravel\Passport\HasApiTokens;
-use App\Modules\Admin\Role\Models\Traits\UserRoles;
 
 class User extends AuthUser
 {
@@ -22,4 +22,8 @@ class User extends AuthUser
     protected $hidden = [
         'password'
     ];
+
+
+
+
 }
